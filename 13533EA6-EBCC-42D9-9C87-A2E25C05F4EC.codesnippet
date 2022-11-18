@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazy imageView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIImageView *)&lt;#imgView#&gt;{
+    if (_&lt;#imgView#&gt; == nil) {
+        _&lt;#imgView#&gt; = [[UIImageView alloc]init];
+        _&lt;#imgView#&gt;.clipsToBounds = YES;
+        _&lt;#imgView#&gt;.contentMode = UIViewContentModeScaleAspectFill;
+        _&lt;#imgView#&gt;.image = [UIImage imageNamed:@""];
+    }
+    return _&lt;#imgView#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>13533EA6-EBCC-42D9-9C87-A2E25C05F4EC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>懒加载imgview</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>懒加载imgview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

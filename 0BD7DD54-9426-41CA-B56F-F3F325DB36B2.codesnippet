@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazy collectionview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UICollectionView *)collectionView
+{
+    UICollectionViewFlowLayout *flowlayout = [[UICollectionViewFlowLayout alloc] init];
+    //设置滚动方向
+    [flowlayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    //左右间距
+    flowlayout.minimumInteritemSpacing = 0;
+    //上下间距
+    flowlayout.minimumLineSpacing = 0;
+    flowlayout.headerReferenceSize = CGSizeMake(kScreenWidth, kScaleOfScreen(210));
+    flowlayout.sectionInset =UIEdgeInsetsMake(0, 0, 0, 0);
+    if (!_collectionView) {
+        _collectionView =[[UICollectionView alloc] initWithFrame:CGRectMake(0 , 0 , [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) collectionViewLayout:flowlayout];
+    }
+    if (@available(iOS 11.0,*)) {
+        _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
+    _collectionView.contentInset = UIEdgeInsetsZero;
+    _collectionView.scrollIndicatorInsets = _collectionView.contentInset;
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    [_collectionView setBackgroundColor:[UIColor clearColor]];
+    _collectionView.alwaysBounceVertical = YES;
+    _collectionView.showsVerticalScrollIndicator = NO;
+    [_collectionView registerClass:[FixedSchedulingCollectCell class] forCellWithReuseIdentifier:@"cellID"];
+    
+    return _collectionView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0BD7DD54-9426-41CA-B56F-F3F325DB36B2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>懒加载collectionview</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>懒加载collectionview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

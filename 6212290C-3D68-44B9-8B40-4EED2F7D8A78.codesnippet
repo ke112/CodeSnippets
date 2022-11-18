@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>test btn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [testBtn setTitle:@"testBtn" forState:UIControlStateNormal];
+    [testBtn setTitleColor:UIColor.redColor forState:UIControlStateNormal];
+    [testBtn addTarget:self action:@selector(testClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testBtn];
+    testBtn.frame = CGRectMake(100, 200, 60, 20);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6212290C-3D68-44B9-8B40-4EED2F7D8A78</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>添加一个测试的btn</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>添加一个测试的btn</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
